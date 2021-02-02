@@ -1,27 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <CheckBox
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:src="@drawable/ic_launcher_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:text="Java"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        tools:layout_editor_absoluteY="101dp">
 
-    </ImageView>
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="C#"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="47dp">
+
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:text="JavaScript"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        tools:layout_editor_absoluteY="157dp">
+
+    </CheckBox>
+
+    <CheckBox
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/checkBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        tools:layout_editor_absoluteY="218dp">
+
+    </CheckBox>
 
     <TextView
-        android:id="@+id/textView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:text="Programing language"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="247dp" />
+        android:layout_height="wrap_content">
+
+    </TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
